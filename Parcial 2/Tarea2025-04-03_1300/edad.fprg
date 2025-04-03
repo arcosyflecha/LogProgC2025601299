@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="edad"/>
+        <attribute name="authors" value="Eli Gonz&#225;lez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 10:45:47 p. m."/>
+        <attribute name="created" value="RWxpIEdvbnrDoWxlejtMQVBUT1AtUUg2MUtQNDU7MjAyNS0wNC0wMjsxMDo0MDo1OCBwLiBtLjszNzc0"/>
+        <attribute name="edited" value="RWxpIEdvbnrDoWxlejtMQVBUT1AtUUg2MUtQNDU7MjAyNS0wNC0wMjsxMDo0NTo0NyBwLiBtLjsxOzM4ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <assign variable="edad" expression="0"/>
+            <output expression="&quot;&#191;Cu&#225;ntos a&#241;os tienes?&quot;" newline="True"/>
+            <input variable="edad"/>
+            <if expression="edad&lt;=4">
+                <then>
+                    <output expression="&quot;Gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad&gt;=18">
+                        <then>
+                            <output expression="&quot;$500&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;$200&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
