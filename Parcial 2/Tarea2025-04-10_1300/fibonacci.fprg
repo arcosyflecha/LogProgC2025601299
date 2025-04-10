@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonacci"/>
+        <attribute name="authors" value="Eli Gonz&#225;lez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-10 06:59:06 a. m."/>
+        <attribute name="created" value="RWxpIEdvbnrDoWxlejtMQVBUT1AtUUg2MUtQNDU7MjAyNS0wNC0wODswNjo0NDowNyBwLiBtLjszNzgz"/>
+        <attribute name="edited" value="RWxpIEdvbnrDoWxlejtMQVBUT1AtUUg2MUtQNDU7MjAyNS0wNC0xMDswNjo1OTowNiBhLiBtLjsxOzM4NzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="n2" type="Integer" array="False" size=""/>
+            <declare name="n3" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="3"/>
+            <assign variable="n" expression="0"/>
+            <assign variable="n2" expression="1"/>
+            <assign variable="n3" expression="1"/>
+            <output expression="n" newline="True"/>
+            <assign variable="n" expression="n+1"/>
+            <output expression="n" newline="True"/>
+            <output expression="n" newline="True"/>
+            <while expression="i&lt;=64">
+                <assign variable="n" expression="n2+n3"/>
+                <assign variable="n2" expression="n3"/>
+                <assign variable="n3" expression="n"/>
+                <assign variable="i" expression="i+1"/>
+                <output expression="n" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
